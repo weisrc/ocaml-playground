@@ -1,2 +1,3 @@
 (library
- (name fib))
+ (name fib)
+ (modules bigInt))
