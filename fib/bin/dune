@@ -2,3 +2,7 @@
  (public_name fib)
  (name main)
  (libraries fib))
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))
