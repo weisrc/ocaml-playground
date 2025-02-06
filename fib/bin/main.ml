@@ -40,7 +40,7 @@ let rec ( ^ ) (mat : mat2x2) n : mat2x2 =
 
 let second_of_mat ((_, a01, _, _) : mat2x2) = a01
 let log_fib n = second_of_mat (([ 1 ], [ 1 ], [ 1 ], [ 0 ]) ^ n)
-let n = 20000
+let n = 500_000
 let log_time, log_out = time_it (fun () -> log_fib n);;
 
 printf "log_time: %f\n%!" log_time
@@ -53,4 +53,5 @@ printf "lin_time: %f\n%!" lin_time;;
 
 printf "bad_time: %f\n%!" bad_time;; *)
 
-printf "same: %s\n%!" (if log_out = lin_out then "true" else "false")
+printf "same: %s\n%!" (if log_out = lin_out then "true" else "false");;
+printf "digit count: %d\n%!" (string_of_bigint lin_out |> String.length)
