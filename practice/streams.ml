@@ -82,4 +82,4 @@ let change_gen all_coins total =
 
 print_repeated
   (print_option (print_list print_int))
-  (take 1000 (change_gen [ 100; 50; 20; 10; 2; 1 ] 1000))
+  (take 1000 (change_gen [ 100; 50; 20; 10; 2; 1 ] 50))
