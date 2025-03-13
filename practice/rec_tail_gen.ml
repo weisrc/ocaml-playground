@@ -42,5 +42,5 @@ assert (tail_out = ans);
 assert (cps_out = ans);
 assert (gen_out = ans);
 
-Printf.printf "rec: %f \ntail: %f \ncps: %f \ngen_prep: %f \ngen: %f \n" rec_time
-  tail_time cps_time gen_prep_time gen_time
+Printf.printf "rec: %f \ntail: %f \ncps: %f \ngen_prep: %f \ngen: %f \n"
+  rec_time tail_time cps_time gen_prep_time gen_time
