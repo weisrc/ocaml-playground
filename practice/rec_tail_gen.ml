@@ -11,7 +11,7 @@ let tail_pow exp base div =
 
 let cps_pow exp base div =
   let rec helper exp k =
-    if exp = 0 then k 1 else helper (exp - 1) (fun x -> k base * x mod div)
+    if exp = 0 then k 1 else helper (exp - 1) (fun x -> k (base * x mod div))
   in
   helper exp (fun x -> x)
 
